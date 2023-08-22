@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Plutarco.Moya\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSyncfusion_Shared_Base Condition=" '$(PkgSyncfusion_Shared_Base)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\syncfusion.shared.base\22.2.7</PkgSyncfusion_Shared_Base>
+    <PkgSyncfusion_Core_WinForms Condition=" '$(PkgSyncfusion_Core_WinForms)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\syncfusion.core.winforms\22.2.7</PkgSyncfusion_Core_WinForms>
+    <PkgSyncfusion_SfListView_WinForms Condition=" '$(PkgSyncfusion_SfListView_WinForms)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\syncfusion.sflistview.winforms\22.2.7</PkgSyncfusion_SfListView_WinForms>
+    <PkgSyncfusion_PdfViewer_Windows Condition=" '$(PkgSyncfusion_PdfViewer_Windows)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\syncfusion.pdfviewer.windows\22.1.39</PkgSyncfusion_PdfViewer_Windows>
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\Plutarco.Moya\.nuget\packages\microsoft.web.webview2\1.0.1823.32</PkgMicrosoft_Web_WebView2>
+  </PropertyGroup>
+</Project>

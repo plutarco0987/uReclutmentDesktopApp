@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <WebView2DispatchAdapterUseJavaScriptCase>False</WebView2DispatchAdapterUseJavaScriptCase>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="23.8.0" />
+    <PackageReference Include="DG.AdvancedDataGridView" Version="1.2.27706.9" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1823.32" />
+    <PackageReference Include="syncfusion.pdf.winforms" Version="22.1.39" />
+    <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="22.1.39" />
+    <PackageReference Include="Syncfusion.SfListView.WinForms" Version="22.2.7" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExportTable\ExportTable.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Entities">
+      <HintPath>bin\Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Meeting.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="views\Execute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\QuestionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Meetings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Candidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Requirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Vacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\EnumType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="views\Stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
