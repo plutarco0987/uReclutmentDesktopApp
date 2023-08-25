@@ -587,8 +587,16 @@ namespace uReclutmentConfigurations.views
             {
                 contractHTML += string.Format("<option value=\"{0}\">{0}</option>", item);
             }
+            string Recruiter = "";
+            string RecruiterHTML = "";
+            Program.Settings.TryGetValue("Recruiter", out Recruiter);            
+            foreach (var item in Recruiter.Split(","))
+            {
+                RecruiterHTML += string.Format("<option value=\"{0}\">{0}</option>", item);
+            }
 
-            part4 = String.Format(part4, TitleApply, LabelUpload, LabelUploadFile, listQuestions, EmailSubject, vacancy.Name, MessageSucess, MessageError, contractHTML, vacancy.VacancyId);
+
+            part4 = String.Format(part4, TitleApply, LabelUpload, LabelUploadFile, listQuestions, EmailSubject, vacancy.Name, MessageSucess, MessageError, contractHTML, vacancy.VacancyId, RecruiterHTML);
 
 
             // stcript

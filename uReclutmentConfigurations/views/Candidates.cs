@@ -29,6 +29,7 @@ namespace uReclutmentConfigurations.views
         public Candidates()
         {
             InitializeComponent();
+            label15.Text = "Email";
             InitialCombo("");
 
 

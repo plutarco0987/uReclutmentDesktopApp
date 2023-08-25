@@ -100,8 +100,8 @@ namespace uReclutmentConfigurations
         public static string RandomString()
         {
             string value = "8", EmailChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            Settings.TryGetValue("CountCharacterEmailReset", out value);
-            Settings.TryGetValue("EmailChars", out EmailChars);
+            //Settings.TryGetValue("CountCharacterEmailReset", out value);
+            //Settings.TryGetValue("EmailChars", out EmailChars);
             int length = int.Parse(value);
 
             string chars = EmailChars; 
